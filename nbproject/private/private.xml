@@ -4,10 +4,20 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/java/NetBeansProjects/AerolineaSpring/web/WEB-INF/faces-config.xml</file>
-            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/GenericDao.java</file>
-            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/GenerciDaoImpl.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/VueloDao.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/AeropuertoDao.java</file>
             <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/hibernate.cfg.xml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/web/WEB-INF/Vuelos/FormVuelos.xhtml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/AvionDao.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/control/ControlVuelos.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/web/WEB-INF/Vuelos/ListadoVuelos.xhtml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/GenericDao.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/web/WEB-INF/template/miTemplate.xhtml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/VueloDaoImpl.java</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/AeropuertoDaoImpl.java</file>
             <file>file:/Users/java/NetBeansProjects/AerolineaSpring/web/WEB-INF/beans.xml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/web/index.xhtml</file>
+            <file>file:/Users/java/NetBeansProjects/AerolineaSpring/src/java/com/aerolinea/dao/GenericDaoImpl.java</file>
         </group>
     </open-files>
 </project-private>

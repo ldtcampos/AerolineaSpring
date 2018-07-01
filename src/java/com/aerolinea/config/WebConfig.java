@@ -21,8 +21,8 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public ViewResolver viewResolver() {
         InternalResourceViewResolver resolver =
         new InternalResourceViewResolver();
-        resolver.setPrefix("/WEB-INF/jsp/");
-        resolver.setSuffix(".jsp");
+        resolver.setPrefix("/faces/");
+        resolver.setSuffix(".xhtml");
         resolver.setExposeContextBeansAsAttributes(true);
     return resolver;
     }
@@ -45,7 +45,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public DriverManagerDataSource restDataSource() {
       DriverManagerDataSource dataSource = new DriverManagerDataSource();
       dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-      dataSource.setUrl("jdbc:mysql://localhost:3306/aerolinea?zeroDateTimeBehavior=convertToNull");
+      dataSource.setUrl("jdbc:mysql://localhost/aerolinea");
       dataSource.setUsername("root");
       dataSource.setPassword("admin");
  

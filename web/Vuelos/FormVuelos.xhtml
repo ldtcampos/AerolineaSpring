@@ -7,19 +7,15 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core" 
       xmlns:p="http://primefaces.org/ui">
     <body>
-        <ui:composition template="./../template/miTemplate.xhtml">
+        <ui:composition template="./template/miTemplate.xhtml">
             <ui:define name="content"> <f:view>
                     <h:form>
-                        <h1><h:outputText value="Crear/Editar
-                                          Vuelo"/></h1>
+                        <h1><h:outputText value="Crear/Editar Vuelo"/></h1>
                         <h:panelGrid columns="3" id="grid"> <h:outputLabel value="Idvuelo:" for="idvuelo" />
-
-                            <p:inputText id="idvuelo" value="#{controlVuelos.vuelo.idvuelo}" readonly="true"
-                                         title="Idvuelo"/>
+                            <p:inputText id="idvuelo" value="#{controlVuelos.vuelo.idvuelo}" readonly="true" title="Idvuelo"/>
                             <p:message for="idvuelo" />
                             <h:outputLabel value="Origen:" for="aeropuertoByIdorigen" />
-                            <p:selectOneMenu
-                                id="aeropuertoByIdorigen" value="#{controlVuelos.origen.idaeropuerto}" title="AeropuertoByIdorigen" >
+                            <p:selectOneMenu id="aeropuertoByIdorigen" value="#{controlVuelos.origen.idaeropuerto}" title="AeropuertoByIdorigen" >
                                 <f:selectItem itemLabel="ORIGEN"
                                               itemValue="0" />
                                 <f:selectItems value="#{controlVuelos.origenes}" var="o"
