@@ -15,15 +15,15 @@ public class VueloDaoImpl extends GenericDaoImpl<Vuelos, Integer> implements Vue
         Session session = sessionFactory.openSession();
         try {
             session.beginTransaction();
-            String hql = " select v from Vuelo v join fetch v.aeropuertoByIdorigen "
-                    + " join fetch v.aeropuertoByIddestino join fetch v.avion "
+            String hql = " select v from Vuelos v join fetch v.aeropuertosByIdorigen "
+                    + " join fetch v.aeropuertosByIddestino join fetch v.aviones "
                     + " where v.idvuelo>0 ";
             System.out.println(hql);
             if (fecha1 != null && fecha2 != null) {
                 hql += " and v.fecha between :f1 and :f2";
             }
             if (iddestino != 0 && idorigen != 0) {
-                hql += " and v.aeropuertoByIdorigen.idaeropuerto =:idorigen and v.aeropuertoByIddestino.idaeropuerto = :iddestino";
+                hql += " and v.aeropuertosByIdorigen.idaeropuerto =:idorigen and v.aeropuertosByIddestino.idaeropuerto = :iddestino";
             }
             Query query = session.createQuery(hql);
             if (fecha1 != null && fecha2 != null) {
